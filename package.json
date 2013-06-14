@@ -1,0 +1,10 @@
+{
+	"name" : "json-server",
+	"version" : "0.0.1",
+	"scripts" : {
+		"start" : "json2.js"
+	},
+	"dependencies": {
+		"express": "x"
+	}
+}

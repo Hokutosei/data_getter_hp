@@ -4,8 +4,10 @@ var https = require('https'), http = require('http'), dataArray = {},
 var serverStart = new Date(), counter = 0;
 
 http.createServer(function(req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain'});
-    res.end(JSON.stringify(dataArray))
+    res.writeHead(200, { 'Content-Type': 'text/json'});
+    res.send(JSON.stringify(dataArray))	
+    //res.end(JSON.stringify(dataArray))
+    res.end()
 }).listen(port, '127.0.0.1');
 
 getData()
